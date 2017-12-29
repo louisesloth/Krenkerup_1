@@ -1,70 +1,98 @@
 html {
-  font-size: 62.5%;
-  max-width: 100%; }
-  html img {
-    width: 80%; }
+  font-size: 62.5%; }
 
-header img {
-  width: 100%; }
-
-h1 {
-  color: #bc1825;
-  text-align: center;
-  font-size: 2.5rem; }
-
-.img1 {
+header {
   display: flex;
-  justify-content: center;
-  width: 100%; }
+  justify-content: space-around; }
+  header img {
+    max-height: 9rem;
+    width: auto; }
+
+nav {
+  display: flex;
+  justify-content: center; }
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  justify-content: space-between;
+  color: #000000;
+  font-size: 1.8rem;
+  margin: 1.5rem; }
 
 h2 {
-  background-color: #bc1825;
+  background-color: #00A500;
   color: #f2f2f2;
-  font-family: Bahnschrift, SansSerif; }
+  font-family: savoye, SansSerif;
+  font-size: 2.4rem; }
 
 h3 {
-  color: #bc1825; }
+  color: #bc1825;
+  font-size: 1.8rem; }
 
 p {
-  width: 80%; }
+  margin: 0px 10px;
+  font-size: 1.4rem; }
 
-@supports (grid-area: auto) {
-  #grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "h h h h h h" "nav nav nav nav nav nav" ". v1 v1 v1 v1 ." "o1 o1 o1 o1 o1 o1" ". e_t e_t e_t e_t ." ". i1 i1 i1 i1 ." "o2 o2 o2 o2 o2 o2" ". i2 i2 i2 i2 ." ". o_t o_t o_t o_t ." ". v2 v2 v2 v2 ." "o3 o3 o3 o3 o3 o3"; }
+#v1 {
+  display: flex;
+  justify-content: center; }
+  #v1 video {
+    max-height: 10rem;
+    width: auto; }
 
-  header {
-    grid-area: h; }
+#o_i {
+  display: flex;
+  justify-content: center; }
+  #o_i img {
+    max-height: 40rem; }
 
-  nav {
-    grid-area: nav; }
+footer {
+  background-color: #00A500; }
+  footer img {
+    max-height: 5rem;
+    width: auto;
+    display: inline-flex;
+    justify-content: space-around; }
 
-  #v1 {
-    grid-area: v1; }
+@media screen and (min-width: 768px) {
+  @supports (grid-area: auto) {
+    #grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas: "h h h h h h" "nav nav nav nav nav nav" ". v1 v1 v1 v1 ." "o1 o1 o1 o1 o1 o1" ". e_t e_t e_t e_t ." ". i1 i1 i1 i1 ." "o2 o2 o2 o2 o2 o2" ". i2 i2 i2 i2 ." ". o_t o_t o_t o_t ." ". v2 v2 v2 v2 ." "o3 o3 o3 o3 o3 o3"; }
 
-  #o1 {
-    grid-area: o1; }
+    header {
+      grid-area: h; }
 
-  #e_t {
-    grid-area: e_t; }
+    nav {
+      grid-area: nav; }
 
-  #i1 {
-    grid-area: i1; }
+    #v1 {
+      grid-area: v1; }
 
-  #o2 {
-    grid-area: o2; }
+    #o1 {
+      grid-area: o1; }
 
-  #i2 {
-    grid-area: i2; }
+    #e_t {
+      grid-area: e_t; }
 
-  #o_t {
-    grid-area: o_t; }
+    #i1 {
+      grid-area: i1; }
 
-  #v2 {
-    grid-area: v2; }
+    #o2 {
+      grid-area: o2; }
 
-  #o3 {
-    grid-area: o3; } }
+    #i2 {
+      grid-area: i2; }
+
+    #o_t {
+      grid-area: o_t; }
+
+    #v2 {
+      grid-area: v2; }
+
+    #o3 {
+      grid-area: o3; } } }
 
 /*# sourceMappingURL=stil.css.map */

@@ -1,3 +1,3 @@
 $(document).on('click', 'a[href^="#"]', function (event) {event.preventDefault();
 
-$('html, body').animate({scrollTop: $($.attr(this, 'href')).offset().top - 80}, 1000);});
+$('html, body').animate({scrollTop: $($.attr(this, 'href')).offset().top - 500}, 1000);});
