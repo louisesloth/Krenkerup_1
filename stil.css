@@ -1,28 +1,33 @@
 html {
   font-size: 62.5%; }
 
+#h_n {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff; }
+
 header {
   display: flex;
   justify-content: space-around; }
   header img {
-    max-height: 9rem;
+    height: 9rem;
     width: auto; }
 
 nav {
   display: flex;
   justify-content: center; }
-
-a {
-  text-decoration: none;
-  display: inline-block;
-  justify-content: space-between;
-  color: #000000;
-  font-size: 1.8rem;
-  margin: 1.5rem; }
+  nav a {
+    text-decoration: none;
+    display: inline-block;
+    justify-content: space-between;
+    color: #000000;
+    font-size: 1.8rem;
+    margin: 1.5rem; }
 
 h2 {
   background-color: #00A500;
-  color: #f2f2f2;
+  color: #ffffff;
   font-family: savoye, SansSerif;
   font-size: 2.4rem; }
 
@@ -52,8 +57,11 @@ footer {
   footer img {
     max-height: 5rem;
     width: auto;
-    display: inline-flex;
-    justify-content: space-around; }
+    padding: 5px; }
+
+#k_i {
+  display: flex;
+  justify-content: space-around; }
 
 @media screen and (min-width: 768px) {
   @supports (grid-area: auto) {
