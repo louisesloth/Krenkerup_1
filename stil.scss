@@ -2,6 +2,23 @@
 html {
   font-size: 62.5%; //1rem=10px
 }
+body {
+  margin-top: 141px;
+}
+.rs {
+  border-color: #bc1825;
+  background-color: #bc1825;
+  height: 1.5px;
+}
+.grs {
+  border-color: #25bc18;
+  background-color: #25bc18;
+}
+.gus {
+  border-color: #9d883e;
+  background-color: #9d883e;
+  height: 0.5px;
+}
 //overordnet slut
 //header og nav
 #h_n {
@@ -9,6 +26,7 @@ html {
   top: 0; // Position the navbar at the top of the page
   width: 100%;
   background-color: #ffffff;
+  margin-left: -8px;
 }
 //header og nav
 //header
@@ -30,13 +48,13 @@ nav{
     display: inline-block;
     justify-content: space-between;
     color: #000000;
-    font-size: 1.8rem;
-    margin: 1.5rem;
+   font-size: 1.8rem;
+    margin: 0.7rem;
   }
 }
 //indhold
 h2 {
-  background-color: #00A500;
+  background-color: #bc1825;
   color: #ffffff;
   font-family: savoye, SansSerif;
   font-size: 2.4rem;
@@ -49,11 +67,16 @@ p {
   margin: 0px 10px;
   font-size: 1.4rem;
 }
-#v1 {
+ul {
+  margin: 0px 10px;
+  font-size: 1.4rem;
+}
+.v {
   display: flex;
   justify-content: center;
+  margin-top: 6px;
   video {
-    max-height: 10rem;
+    max-height: 18rem;
     width: auto;
   }
 }
@@ -66,7 +89,7 @@ p {
 }
 //indhold slut
 footer {
-  background-color: #00A500;
+  background-color: #bc1825;
   img {
     max-height: 5rem;
     width: auto;
