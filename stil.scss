@@ -1,121 +1,128 @@
 //overordnet
-html {
-  font-size: 62.5%; //1rem=10px
-}
-body {
-  margin-top: 160px;
-}
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
-@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
-@import url('https://fonts.googleapis.com/css?family=PT+Sans');
-.rs {
-  border-color: #bc1825;
-  background-color: #bc1825;
-  //height: 1.5px;
-}
-.gus {
-  border-color: #9d883e;
-  background-color: #9d883e;
-  //height: 0.5px;
-}
-.grs {
-  border-color: #25bc18;
-  background-color: #25bc18;
-}
+  html {
+    font-size: 62.5%; //1rem=10px
+  }
+  body {
+    margin-top: 160px; //for at holde sidens viste indhold under navigationen
+  }
+  //fonte implementeret fra Google fonts
+    @import url('https://fonts.googleapis.com/css?family=Playfair+Display'); //navigation og h3
+    @import url('https://fonts.googleapis.com/css?family=Great+Vibes'); //h2 (og logo)
+    @import url('https://fonts.googleapis.com/css?family=PT+Sans'); //p og ul
+  //fonte implementeret fra Google fonts slut
+  //linjer under navigation og overskrifter
+    .rs {
+      border-color: #bc1825;
+      background-color: #bc1825;
+    }
+    .gus {
+      border-color: #9d883e;
+      background-color: #9d883e;
+    }
+    .grs {
+      border-color: #25bc18;
+      background-color: #25bc18;
+    }
+  //linjer under navigation og overskrifter slut
 //overordnet slut
 //header og nav
-#h_n {
-  position: fixed; // Set the navbar to fixed position
-  top: 0; // Position the navbar at the top of the page
-  width: 100%;
-  background-color: #ffffff;
-  margin-left: -8px;
-}
+  #h_n {
+    position: fixed; //holder header og nav fast
+    top: 0; //holder header og nav i toppen
+    width: 100%;
+    margin-left: -8px; //ellers går det ikke helt ud i venstre side
+    background-color: #ffffff;
+  }
 //header og nav
 //header
-header {
-  display: flex;
-  justify-content: space-around;
-  img {
-    height: 9rem;
-    width: auto;
+  header {
+    display: flex;
+    justify-content: space-around;
+    img {
+      height: 9rem;
+      width: auto;
+    }
   }
-}
 //header slut
 //nav
-nav{
-  display: flex;
-  justify-content: center;
-  a {
-    font-family: "Playfair Display", SansSerif;
-    text-decoration: none;
-    display: inline-block;
-    justify-content: space-between;
-    color: #000000;
-   font-size: 1.8rem;
-    margin: 0.7rem;
+  nav{
+    display: flex;
+    justify-content: center;
+    a {
+      font-family: "Playfair Display", SansSerif;
+      text-decoration: none;
+      display: inline-block;
+      justify-content: space-between;
+      color: #000000;
+      font-size: 1.8rem;
+      margin: 0.7rem;
+    }
   }
-}
 //indhold forside
-h4 {
-  color: #ffffff;
-  font-family: "Great Vibes", Serif;
-  font-size: 0.5rem;
-}
-h2 {
-  color: #bc1825;
-  font-family: "Great Vibes", Serif;
-  font-size: 2.8rem;
-}
-h3 {
-  font-family: "Playfair Display", SansSerif;
-  color: #bc1825;
-  font-size: 1.8rem;
-}
-p {
-  font-family: "PT Sans", SansSerif;
-  margin: 0px 10px;
-  font-size: 1.4rem;
-}
-ul {
-  font-family: "PT Sans", SansSerif;
-  margin: 0px 10px;
-  font-size: 1.4rem;
-}
-.v {
-  display: flex;
-  justify-content: center;
-  margin-top: 6px;
-  video {
-    max-height: 18rem;
-    width: auto;
-  }
-}
-#o_i {
-  display: flex;
-  justify-content: center;
-  img {
-    max-height: 40rem;
-  }
-}
+  //tekst
+    h4 { //skubber h2 ned under navigaton, ved brug af navigationslinks
+      color: #ffffff;
+      font-family: "Great Vibes", Serif;
+      font-size: 0.5rem;
+    }
+    h2 {
+      color: #bc1825;
+      font-family: "Great Vibes", Serif;
+      font-size: 2.8rem;
+    }
+    h3 {
+      font-family: "Playfair Display", SansSerif;
+      color: #bc1825;
+      font-size: 1.8rem;
+    }
+    p {
+      font-family: "PT Sans", SansSerif;
+      margin: 0px 10px;
+      font-size: 1.4rem;
+    }
+    ul {
+      font-family: "PT Sans", SansSerif;
+      margin: 0px 10px;
+      font-size: 1.4rem;
+    }
+  //tekst slut
+  //video
+    .v {
+      display: flex;
+      justify-content: center;
+      margin-top: 6px;
+      video {
+        max-height: 18rem;
+        width: auto;
+      }
+    }
+  //video slut
+  //billed
+    #f_i {
+      display: flex;
+      justify-content: center;
+    }
+  // slut
 //indhold forside slut
 //indhold kontakt
-#kontakt {
-  margin-bottom: 22rem;
-}
-footer {
-  background-color: #bc1825;
-  width: 100%;
-  img {
-    max-height: 5rem;
-    width: auto;
-    padding: 5px;
+  #kontakt {
+    margin-bottom: 22rem; //luft ned til footer
   }
-}
-#k_i {
-  display: flex;
-  justify-content: space-around;
-}
+//indhold kontakt slut
+//footer
+  footer {
+    background-color: #bc1825;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    img {
+      max-height: 5rem;
+      width: auto;
+      padding: 5px;
+    }
+  }
+//footer slut
+//tablet
 @media screen and (min-width: 768px) {
   //grid
   @supports (grid-area: auto) {
@@ -123,23 +130,19 @@ footer {
       display: grid;
       grid-template-columns: 50% 50%;
       grid-template-areas:
-            "h h"
-            "nav nav"
-            "v1 v1"
-            "e e "
+            "h_n h_n"
+            "v v"
+            "e e"
             "f_o f_o"
             "f_i f_t"
             "b_o b_o"
             "b_t b_v"
-            "f f"            
+            "f f";
   }
   //grid slut
   //grid navne
-  header {
-    grid-area: h;
-  }
-  nav {
-    grid-area: n;
+  #h_n {
+    grid-area: h_n;
   }
   #v {
     grid-area: v;
@@ -170,4 +173,33 @@ footer {
   }
   //gridnavne slut
 }
+  #v video {
+    max-height: 36rem;
+    width: auto;
+  }
+  #f_i img{
+    max-height: 500px;
+  }
 }
+//pc
+@media screen and (min-width: 1024px) {
+  //grid
+  @supports (grid-area: auto) {
+    #grid {
+      display: grid;
+      grid-template-columns: 25% 25%;
+      grid-template-areas:
+              "h_n h_n h_n h_n"
+              "v v v v"
+              "e f_o f_o b_o"
+              "e f_i f_t b_t"
+              "e f_i f_t b_v"
+              "f f f f";
+    }
+    //grid slut
+  }
+#h_n img{
+  max-height: 100px;
+}
+}
+//pc slut

@@ -23,8 +23,8 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #ffffff;
-  margin-left: -8px; }
+  margin-left: -8px;
+  background-color: #ffffff; }
 
 header {
   display: flex;
@@ -78,39 +78,32 @@ ul {
     max-height: 18rem;
     width: auto; }
 
-#o_i {
+#f_i {
   display: flex;
   justify-content: center; }
-  #o_i img {
-    max-height: 40rem; }
 
 #kontakt {
   margin-bottom: 22rem; }
 
 footer {
   background-color: #bc1825;
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  justify-content: space-around; }
   footer img {
     max-height: 5rem;
     width: auto;
     padding: 5px; }
-
-#k_i {
-  display: flex;
-  justify-content: space-around; }
 
 @media screen and (min-width: 768px) {
   @supports (grid-area: auto) {
     #grid {
       display: grid;
       grid-template-columns: 50% 50%;
-      grid-template-areas: "h h" "nav nav" "v1 v1" "e e " "f_o f_o" "f_i f_t" "b_o b_o" "b_t b_v" "f f" ". v2 v2 v2 v2 ." "o3 o3 o3 o3 o3 o3"; }
+      grid-template-areas: "h_n h_n" "v v" "e e" "f_o f_o" "f_i f_t" "b_o b_o" "b_t b_v" "f f"; }
 
-    header {
-      grid-area: h; }
-
-    nav {
-      grid-area: n; }
+    #h_n {
+      grid-area: h_n; }
 
     #v {
       grid-area: v; }
@@ -137,6 +130,20 @@ footer {
       grid-area: b_v; }
 
     footer {
-      grid-area: f; } } }
+      grid-area: f; } }
+  #v video {
+    max-height: 36rem;
+    width: auto; }
+
+  #f_i img {
+    max-height: 500px; } }
+@media screen and (min-width: 1024px) {
+  @supports (grid-area: auto) {
+    #grid {
+      display: grid;
+      grid-template-columns: 25% 25%;
+      grid-template-areas: "h_n h_n h_n h_n" "v v v v" "e f_o f_o b_o" "e f_i f_t b_t" "e f_i f_t b_v" "f f f f"; } }
+  #h_n img {
+    max-height: 100px; } }
 
 /*# sourceMappingURL=stil.css.map */

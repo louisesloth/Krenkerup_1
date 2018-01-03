@@ -3,38 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Kampagne forside</title>
+    <link rel="icon" href="billeder/vintergæk_venstre.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stil.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="nav_links.js"></script>
-    <link rel="icon" href="billeder/vintergæk_venstre.png">
 </head>
-<body>
-<section id="h_n">
-    <header>
-        <img src="billeder/vintergæk_venstre.png">
-        <img src="billeder/logo.png">
-        <img src="billeder/vintergæk_højre.png">
-    </header>
-    <nav>
-        <a href="#o1">Event</a>
-        <a href="#o2">Fødselsdagsøl</a>
-        <a href="#o3">Bryggeriet</a>
-        <a target=blank href="kontakt.html">Kontakt</a>
-    </nav>
-    <hr class="rs">
-    <hr class="gus">
-    <hr class="grs">
-</section>
-    <div class="v">
+<body id="grid">
+    <section id="h_n">
+        <header>
+            <img alt="vintergæk hælder til ventre" src="billeder/vintergæk_venstre.png">
+            <img alt="Tekst: Fødselsdagsøl (linjeskift) 2008-2018 (linjeskift) Krenkerup bryggeri"
+                 src="billeder/logo.png">
+            <img alt="vintergæk hælder til højre" src="billeder/vintergæk_højre.png">
+        </header>
+        <nav>
+            <a href="#o1">Event</a>
+            <a href="#o2">Fødselsdagsøl</a>
+            <a href="#o3">Bryggeriet</a>
+            <a target=blank href="kontakt.html">Kontakt</a>
+        </nav>
+        <hr class="rs">
+        <hr class="gus">
+        <hr class="grs">
+    </section>
+    <section class="v" id="v">
         <video wmode=”transparent” src="billeder/krenkerup2.mp4" controls preload autoplay></video>
-    </div>
-    <h4 id="o1">Event</h4>
-    <h2>Event</h2>
-    <hr class="rs">
-    <hr class="gus">
-    <hr class="grs">
-    <section id="e_t">
+    </section>
+    <section id="e">
+        <h4 id="o1">Event</h4>
+        <h2>Event</h2>
+        <hr class="rs">
+        <hr class="gus">
+        <hr class="grs">
         <h3>Kom og fejr dagen med os!</h3>
         <p>Der vil være mulighed for:</p>
         <ul>
@@ -49,45 +50,49 @@
         <br/>
         <p>Hold jer løbende opdateret her på siden og på vores sociale medier for nyheder og flere detaljer om eventet</p>
     </section>
+    <section id="f_o">
         <h4 id="o2">Fødselsdagsøl</h4>
         <h2>Fødselsdagsøl</h2>
         <hr class="rs">
         <hr class="gus">
-        <hr class="grs">V
-    <div id="o_i">
-        <img src="billeder/flaske.png">
-    </div>
-    <section id="o_t">
+        <hr class="grs">
+    </section>
+    <section id="f_i">
+        <img alt="Krenkerup fødselsdagsøl på flaske" src="billeder/flaske.png">
+    </section>
+    <section id="f_t">
         <h3>Smag</h3>
         <p>En forfriskende forårsøl med krop og fylde trods forholdsvis lav alkohol volumen. Brygmesterens særlige
             aftryk smager du med det samme.</p>
         <h3>Ingridienser</h3>
         <p>Rug, havre, hvede og byg. Alc. 4,1 %</p>
     </section>
-    <h4 id="o3">Bryggeriet</h4>
-    <h2>Bryggeriet</h2>
-    <hr class="rs">
-    <hr class="gus">
-    <hr class="grs">
-    <h3>Kom med indenfor</h3>
-    <p>Til eventet er vores brygmester klar med rundvisninger i bryggeriet, her får i et smugkig indenfor.</p>
-    <div id="o3" class="v">
-        <video src="billeder/krenkerup1.mp4" controls></video>
-    </div>
-    <footer>
-    <section id="k_i">
-        <a target=_blank href="https://www.instagram.com/explore/tags/krenkerup/">
-            <img src="billeder/instagram%20ikon.png"></a>
-        <a target=_blank
-        href="https://www.google.dk/maps/place/Krenkerup+Bryggeri+-+Trakt%C3%B8rstedet/@54.7770302,11.6697819,15.73z/data=!4m5!3m4!1s0x47ad48222c2bd1c7:0x3c6344a2bbce905e!8m2!3d54.776969!4d11.670591?hl=da">
-        <img src="billeder/placering%20ikon.png"></a>
-        <a target=_blank href="http://krenkerupbryggeri.dk/">
-        <img src="billeder/hjemmeside%20ikon.png"></a>
-        <a target=_blank href="kontakt.html">
-        <img src="billeder/mail%20ikon.png"></a>
-        <a target=_blank href="https://www.facebook.com/krenkerupbryggeri/">
-        <img src="billeder/facebook%20ikon.png"></a>
+    <section id="b_o">
+        <h4 id="o3">Bryggeriet</h4>
+        <h2>Bryggeriet</h2>
+        <hr class="rs">
+        <hr class="gus">
+        <hr class="grs">
     </section>
+    <section id="b_t">
+        <h3>Kom med indenfor</h3>
+        <p>Til eventet er vores brygmester klar med rundvisninger i bryggeriet, her får i et smugkig indenfor.</p>
+    </section>
+    <section id="b_v" class="v">
+        <video src="billeder/krenkerup1.mp4" controls></video>
+    </section>
+    <footer>
+        <a target=_blank href="https://www.instagram.com/explore/tags/krenkerup/">
+            <img alt="Instagramikon, link til Krenkerup bryggeris Instagramside" src="billeder/instagram%20ikon.png"></a>
+        <a target=_blank
+            href="https://www.google.dk/maps/place/Krenkerup+Bryggeri+-+Trakt%C3%B8rstedet/@54.7770302,11.6697819,15.73z/data=!4m5!3m4!1s0x47ad48222c2bd1c7:0x3c6344a2bbce905e!8m2!3d54.776969!4d11.670591?hl=da">
+            <img alt="Placeringsikon, link til Krenkerup bryggeris adresse på Google Maps" src="billeder/placering%20ikon.png"></a>
+        <a target=_blank href="http://krenkerupbryggeri.dk/">
+            <img alt="Hjemmesideikon, link til Krenkerup bryggeris hjemmeside" src="billeder/hjemmeside%20ikon.png"></a>
+        <a target=_blank href="kontakt.html">
+            <img alt="Mailikon, link til kontaktformular" src="billeder/mail%20ikon.png"></a>
+        <a target=_blank href="https://www.facebook.com/krenkerupbryggeri/">
+            <img alt="facebookikon, link til Krenkerup bryggeris facebookside" src="billeder/facebook%20ikon.png"></a>
     </footer>
 </body>
 </html>
