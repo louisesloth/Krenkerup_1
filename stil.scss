@@ -4,6 +4,7 @@
   }
   body {
     margin-top: 160px; //for at holde sidens viste indhold under navigationen
+    //background-color: #f6eeee;
   }
   //fonte implementeret fra Google fonts
     @import url('https://fonts.googleapis.com/css?family=Playfair+Display'); //navigation og h3
@@ -29,9 +30,10 @@
   #h_n {
     position: fixed; //holder header og nav fast
     top: 0; //holder header og nav i toppen
-    width: 100%;
+    width: 100vw;
     margin-left: -8px; //ellers går det ikke helt ud i venstre side
     background-color: #ffffff;
+    z-index: 2;//så alt indhold scroller bagved header og navigation
   }
 //header og nav
 //header
@@ -101,6 +103,7 @@
     #f_i {
       display: flex;
       justify-content: center;
+      width: 100%;
     }
   // slut
 //indhold forside slut
@@ -132,7 +135,8 @@
       grid-template-areas:
             "h_n h_n"
             "v v"
-            "e e"
+            "e_o e_o"
+            "e_t e_v"
             "f_o f_o"
             "f_i f_t"
             "b_o b_o"
@@ -147,8 +151,14 @@
   #v {
     grid-area: v;
   }
-  #e{
-    grid-area: e;
+  #e_o{
+    grid-area: e_o;
+  }
+  #e_t {
+    grid-area: e_t;
+  }
+  #e_v {
+    grid-area: e_v;
   }
   #f_o {
     grid-area: f_o;
@@ -191,15 +201,35 @@
       grid-template-areas:
               "h_n h_n h_n h_n"
               "v v v v"
-              "e f_o f_o b_o"
-              "e f_i f_t b_t"
-              "e f_i f_t b_v"
+              "e_o f_o f_o b_o"
+              "e_t f_i f_t b_t"
+              "e_v f_i f_t b_v"
               "f f f f";
     }
     //grid slut
   }
 #h_n img{
   max-height: 100px;
+  margin-top: 2rem;
+}
+h2 {
+  margin-right: 5rem;
+  padding-right: 5rem;
+}
+  .rs {
+    width: 98%;
+  }
+  .gus {
+    width: 98%;
+  }
+  .grs {
+    width: 98%;
+  }
+.v {
+  width: 100%;
+}
+footer {
+  margin-top: 5rem;
 }
 }
 //pc slut

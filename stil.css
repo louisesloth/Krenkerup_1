@@ -22,9 +22,10 @@ body {
 #h_n {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   margin-left: -8px;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  z-index: 2; }
 
 header {
   display: flex;
@@ -80,7 +81,8 @@ ul {
 
 #f_i {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  width: 100%; }
 
 #kontakt {
   margin-bottom: 22rem; }
@@ -100,7 +102,7 @@ footer {
     #grid {
       display: grid;
       grid-template-columns: 50% 50%;
-      grid-template-areas: "h_n h_n" "v v" "e e" "f_o f_o" "f_i f_t" "b_o b_o" "b_t b_v" "f f"; }
+      grid-template-areas: "h_n h_n" "v v" "e_o e_o" "e_t e_v" "f_o f_o" "f_i f_t" "b_o b_o" "b_t b_v" "f f"; }
 
     #h_n {
       grid-area: h_n; }
@@ -108,8 +110,14 @@ footer {
     #v {
       grid-area: v; }
 
-    #e {
-      grid-area: e; }
+    #e_o {
+      grid-area: e_o; }
+
+    #e_t {
+      grid-area: e_t; }
+
+    #e_v {
+      grid-area: e_v; }
 
     #f_o {
       grid-area: f_o; }
@@ -142,8 +150,28 @@ footer {
     #grid {
       display: grid;
       grid-template-columns: 25% 25%;
-      grid-template-areas: "h_n h_n h_n h_n" "v v v v" "e f_o f_o b_o" "e f_i f_t b_t" "e f_i f_t b_v" "f f f f"; } }
+      grid-template-areas: "h_n h_n h_n h_n" "v v v v" "e_o f_o f_o b_o" "e_t f_i f_t b_t" "e_v f_i f_t b_v" "f f f f"; } }
   #h_n img {
-    max-height: 100px; } }
+    max-height: 100px;
+    margin-top: 2rem; }
+
+  h2 {
+    margin-right: 5rem;
+    padding-right: 5rem; }
+
+  .rs {
+    width: 98%; }
+
+  .gus {
+    width: 98%; }
+
+  .grs {
+    width: 98%; }
+
+  .v {
+    width: 100%; }
+
+  footer {
+    margin-top: 5rem; } }
 
 /*# sourceMappingURL=stil.css.map */
