@@ -87,17 +87,23 @@
       margin: 0px 10px;
       font-size: 1.4rem;
     }
+    .kt {
+      font-family: "PT Sans", SansSerif;
+      margin: 0px 10px;
+      font-size: 1.4rem;
+      text-decoration: none;
+    }
   //tekst slut
   //video
     .v {
       display: flex;
       justify-content: center;
       margin-top: 6px;
-      video {
-        max-height: 18rem;
-        width: auto;
-      }
     }
+    video {
+      max-width: 100%;
+      height: auto;
+}
   //video slut
   //billed
     #f_i {
@@ -110,6 +116,12 @@
 //indhold kontakt
   #kontakt {
     margin-bottom: 22rem; //luft ned til footer
+    table {
+      width 100%;
+    }
+  }
+  fieldset {
+    decoration: none;
   }
 //indhold kontakt slut
 //footer
@@ -225,8 +237,34 @@ h2 {
   .grs {
     width: 98%;
   }
-.v {
-  width: 100%;
+  h2 {
+    color: #bc1825;
+    font-family: "Great Vibes", Serif;
+    font-size: 5.6rem;
+  }
+  h3 {
+    font-family: "Playfair Display", SansSerif;
+    color: #bc1825;
+    font-size: 3.6rem;
+  }
+  p {
+    font-family: "PT Sans", SansSerif;
+    margin: 0px 10px;
+    font-size: 2.8rem;
+  }
+  ul {
+    font-family: "PT Sans", SansSerif;
+    margin: 0px 10px;
+    font-size: 2.8rem;
+  }
+  .kt {
+    font-family: "PT Sans", SansSerif;
+    margin: 0px 10px;
+    font-size: 2.8rem;
+    text-decoration: none;
+  }
+.v video{
+  max-height: 30rem;
 }
 footer {
   margin-top: 5rem;

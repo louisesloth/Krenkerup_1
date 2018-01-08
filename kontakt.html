@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="robots" content="noindex, nofollow">
-    <title>Kampagne kontakt</title>
+    <title>Kampagne forside</title>
+    <link rel="icon" href="billeder/vintergæk_venstre.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stil.css">
-    <link rel="icon" href="billeder/vintergæk_venstre.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="nav_links.js"></script>
 </head>
 <body>
 <section id="h_n">
@@ -22,51 +24,23 @@
     <hr class="rs">
     <hr class="gus">
     <hr class="grs">
-<form id="kontakt" name="htmlform" method="post" action="html_form_send.php">
-    <table width="450px">
-        </tr>
-        <tr>
-            <td valign="top">
-                <label for="first_name">Fornavn</label>
-            </td>
-            <td valign="top">
-                <input  type="text" name="first_name">
-            </td>
-        </tr>
-
-        <tr>
-            <td valign="top"">
-            <label for="last_name">Efternavn</label>
-            </td>
-            <td valign="top">
-                <input  type="text" name="last_name">
-            </td>
-        </tr>
-        <tr>
-            <td valign="top">
-                <label for="email">Email</label>
-            </td>
-            <td valign="top">
-                <input  type="text" name="email">
-            </td>
-
-        </tr>
-        <tr>
-            <td valign="top">
-                <label for="comments">Besked</label>
-            </td>
-            <td valign="top">
-                <textarea  name="comments"></textarea>
-            </td>
-
-        </tr>
-        <tr>
-            <td colspan="2" style="text-align:center">
-                <input type="submit" value="Send">
-            </td>
-        </tr>
-    </table>
-</form>
+    <form id="kontakt" action="index.html">
+        <fieldset>
+            <div class="kt">
+                Navn: <input type="text"><br>
+            </div>
+            <div class="kt">
+                Email: <input type="email"><br>
+            </div>
+            <div class="kt">
+                Emne: <input type="text"><br>
+            </div>
+            <div class="kt">
+                Besked: <textarea></textarea>
+            </div>
+            <input type="submit">
+        </fieldset>
+    </form>
     <footer>
             <a target=_blank href="https://www.instagram.com/explore/tags/krenkerup/">
                 <img src="billeder/instagram%20ikon.png"></a>
