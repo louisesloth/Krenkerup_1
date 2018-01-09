@@ -4,7 +4,6 @@
   }
   body {
     margin-top: 160px; //for at holde sidens viste indhold under navigationen
-    //background-color: #f6eeee;
   }
   //fonte implementeret fra Google fonts
     @import url('https://fonts.googleapis.com/css?family=Playfair+Display'); //navigation og h3
@@ -60,6 +59,7 @@
       margin: 0.7rem;
     }
   }
+//nav slut
 //indhold forside
   //tekst
     h4 { //skubber h2 ned under navigaton, ved brug af navigationslinks
@@ -95,15 +95,24 @@
     }
   //tekst slut
   //video
-    .v {
+    .l_v {
       display: flex;
       justify-content: center;
       margin-top: 6px;
+      video {
+        max-width: 100%;
+        max-height: 260px;
+      }
     }
-    video {
-      max-width: 100%;
-      height: auto;
-}
+    #v { //css i seperat id for at kunne overskrive i mediaqueries for denne ene video
+      display: flex;
+      justify-content: center;
+      margin-top: 6px;
+      video{
+        max-width: 100%;
+        max-height: 260px;
+      }
+    }
   //video slut
   //billed
     #f_i {
@@ -117,11 +126,8 @@
   #kontakt {
     margin-bottom: 22rem; //luft ned til footer
     table {
-      width 100%;
+      width: 100%;
     }
-  }
-  fieldset {
-    decoration: none;
   }
 //indhold kontakt slut
 //footer
@@ -144,17 +150,8 @@
     #grid {
       display: grid;
       grid-template-columns: 50% 50%;
-      grid-template-areas:
-            "h_n h_n"
-            "v v"
-            "e_o e_o"
-            "e_t e_v"
-            "f_o f_o"
-            "f_i f_t"
-            "b_o b_o"
-            "b_t b_v"
-            "f f";
-  }
+      grid-template-areas: "h_n h_n" "v v" "e_o e_o" "e_t e_v" "f_o f_o" "f_i f_t" "b_o b_o" "b_t b_v" "f f";
+    }}
   //grid slut
   //grid navne
   #h_n {
@@ -194,25 +191,31 @@
     grid-area: f;
   }
   //gridnavne slut
-}
-  #v video {
-    max-height: 36rem;
-    width: auto;
+//indhold
+  h4 #top{
+    margin-top: 10rem;
   }
+  #v video {
+    max-height: 400px;
+  }
+//indhold slut
+//footer
   #f_i img{
     max-height: 500px;
   }
+//footer slut
 }
+//tablet slut
 //pc
 @media screen and (min-width: 1024px) {
   //grid
   @supports (grid-area: auto) {
     #grid {
       display: grid;
-      grid-template-columns: 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
       grid-template-areas:
               "h_n h_n h_n h_n"
-              "v v v v"
+              ". v v ."
               "e_o f_o f_o b_o"
               "e_t f_i f_t b_t"
               "e_v f_i f_t b_v"
@@ -220,14 +223,22 @@
     }
     //grid slut
   }
-#h_n img{
-  max-height: 100px;
-  margin-top: 2rem;
-}
-h2 {
-  margin-right: 5rem;
-  padding-right: 5rem;
-}
+  body {
+    margin-top: 300px; //for at holde sidens viste indhold under navigationen
+  }
+  header img{
+    height: 18rem;
+    margin-top: 2rem;
+  }
+//nav
+  nav{
+    a {
+      font-size: 3rem;
+      margin: 1.4rem;
+    }
+  }
+//nav slut
+//indhold
   .rs {
     width: 98%;
   }
@@ -240,34 +251,48 @@ h2 {
   h2 {
     color: #bc1825;
     font-family: "Great Vibes", Serif;
-    font-size: 5.6rem;
+    font-size: 5rem;
+    margin-right: 5rem;
+    padding-right: 5rem;
   }
   h3 {
     font-family: "Playfair Display", SansSerif;
     color: #bc1825;
-    font-size: 3.6rem;
+    font-size: 3rem;
+  }
+  #top{
+    margin-bottom: 10rem;
   }
   p {
     font-family: "PT Sans", SansSerif;
     margin: 0px 10px;
-    font-size: 2.8rem;
+    font-size: 2rem;
   }
   ul {
     font-family: "PT Sans", SansSerif;
     margin: 0px 10px;
-    font-size: 2.8rem;
+    font-size: 2rem;
   }
   .kt {
     font-family: "PT Sans", SansSerif;
     margin: 0px 10px;
-    font-size: 2.8rem;
+    font-size: 2rem;
     text-decoration: none;
   }
-.v video{
-  max-height: 30rem;
-}
+  #v video {
+    max-height: 600px;
+  }
+  .l_v video {
+    max-height: 400px;
+  }
+//indhold slut
+//footer
+  #f_i{
+    padding-top: 5rem;
+  }
 footer {
   margin-top: 5rem;
 }
+//footer slut
 }
 //pc slut
